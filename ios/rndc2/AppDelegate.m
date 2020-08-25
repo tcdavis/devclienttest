@@ -31,6 +31,7 @@ static void InitializeFlipper(UIApplication *application) {
 @interface AppDelegate () <RCTBridgeDelegate>
 
 @property (nonatomic, strong) UMModuleRegistryAdapter *moduleRegistryAdapter;
+@property (nonatomic, strong) NSDictionary *launchOptions;
 
 end
 
@@ -42,6 +43,7 @@ end
   InitializeFlipper(application);
 #endif
   self.moduleRegistryAdapter = [[UMModuleRegistryAdapter alloc] initWithModuleRegistryProvider:[[UMModuleRegistryProvider alloc] init]];
+  self.launchOptions = launchOptions;
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
