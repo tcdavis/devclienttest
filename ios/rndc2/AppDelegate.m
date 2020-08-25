@@ -6,6 +6,8 @@
 #import <UMCore/UMModuleRegistry.h>
 #import <UMReactNativeAdapter/UMNativeModulesProxy.h>
 #import <UMReactNativeAdapter/UMModuleRegistryAdapter.h>
+#import <React/RCTDevMenu.h>
+#import <React/RCTAsyncLocalStorage.h>
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -60,7 +62,10 @@ end
 {
   NSArray<id<RCTBridgeModule>> *extraModules = [_moduleRegistryAdapter extraModulesForBridge:bridge];
   // If you'd like to export some custom RCTBridgeModules that are not Expo modules, add them here!
-  return extraModules;
+  return [extraModules arrayByAddingObjectsFromArray:@[
+     [[RCTDevMenu alloc] init],
+     [[RCTAsyncLocalStorage alloc] init],
+   ]];
 }
 
 

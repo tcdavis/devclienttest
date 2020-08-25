@@ -9,6 +9,8 @@ target 'rndc2' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
+  # Manual linking
+  pod 'EXDevMenu', path: '../../../expo/packages/expo-dev-menu'
 
   target 'rndc2Tests' do
     inherit! :complete

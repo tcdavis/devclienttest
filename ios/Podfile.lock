@@ -6,6 +6,8 @@ PODS:
   - EXConstants (9.1.1):
     - UMConstantsInterface
     - UMCore
+  - EXDevMenu (0.1.0):
+    - React
   - EXFileSystem (9.0.1):
     - UMCore
     - UMFileSystemInterface
@@ -333,6 +335,7 @@ PODS:
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
+  - EXDevMenu (from `../../../expo/packages/expo-dev-menu`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXImageLoader (from `../node_modules/expo-image-loader/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
@@ -416,6 +419,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
+  EXDevMenu:
+    :path: "../../../expo/packages/expo-dev-menu"
   EXFileSystem:
     :path: "../node_modules/expo-file-system/ios"
   EXImageLoader:
@@ -505,6 +510,7 @@ SPEC CHECKSUMS:
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: cde416483dac037923206447da6e1454df403714
   EXConstants: c2c6d5805520a34f274e09b778404310c52b118f
+  EXDevMenu: 83316fe0e2fabf443a2b60e5cf3bb0dc78c3d430
   EXFileSystem: 8d1dc2924d62046275c84d70b88fa3aa7daeb116
   EXImageLoader: 8366cb1a7d207a241a1bfaa4c5ab4859cf72d507
   EXPermissions: b6d7134b7215c33420318c2bbb5d362c20ac9726
@@ -556,6 +562,6 @@ SPEC CHECKSUMS:
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 619844edbaf3975a276a98c2ec1e36e9a832fe80
+PODFILE CHECKSUM: 03a3c405834076e83a6f562cdc298690f1ae3887
 
 COCOAPODS: 1.9.3
