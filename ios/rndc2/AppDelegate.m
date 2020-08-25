@@ -33,7 +33,7 @@ static void InitializeFlipper(UIApplication *application) {
 @property (nonatomic, strong) UMModuleRegistryAdapter *moduleRegistryAdapter;
 @property (nonatomic, strong) NSDictionary *launchOptions;
 
-end
+@end
 
 @implementation AppDelegate
 
